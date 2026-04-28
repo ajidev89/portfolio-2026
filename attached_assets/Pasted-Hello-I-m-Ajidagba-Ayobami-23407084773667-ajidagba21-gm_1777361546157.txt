@@ -1,0 +1,47 @@
+Hello
+I’m Ajidagba Ayobami
++23407084773667
+ajidagba21@gmail.com
+https://ajidev89.netlify.app
+https://github.com/ajidev89
+https://www.linkedin.com/in/ajidagba-ayobami/
+Profile Summary
+I am a highly dedicated and solutions-driven backend engineer seasoned with experience in different sectors such as finance, e-commerce, enterprise resource planning, logistics, and digital agencies.
+I am innovative and proactive in successfully building products for (web and mobile applications(APIs)). I have extensive knowledge of working on a product to ascertain company expectations and oversee a product from initial planning to thorough roll-out and support. 
+I have worked with different teams and have experience managing a team of developers and I have always beaten the company’s expectations.
+Skills
+Laravel
+Node.js
+Typescript
+React/Nextjs
+Vue.js/Nuxtjs
+Tailwind CSS
+Git
+Docker
+Experience
+JULY  2024 - PRESENT(Contract)
+Voyatek Group, Nigeria - Principal Software Engineer (Product Architect)
+Led a team of 6 developers in developing Enterprise Resource Planning (ERP) software to streamline company processes. Oversaw architecture design, coordinated development efforts, and ensured timely delivery. Key features of the application include integrated chat and calls, calendar management, leads tracking, and file management, resulting in enhanced productivity for client organizations. 
+
+
+JANUARY 2022 - JUNE 2024
+Kavlr UK, United Kingdom - Fullstack Engineer (Team lead)
+As Team Lead, I oversaw a team of developers, assigning tasks based on individual strengths to ensure optimal performance. I led the creation of an Admin Dashboard and APIs while integrating third-party services such as Evolve for Cards, PayPal, and Stripe to streamline payment processes. Additionally, I spearheaded the development of a No Code Checkout Feature, enabling rapid deployment of payment solutions. I prioritized security and promoted best practices within the team to deliver high-quality, reliable software solutions.
+
+FROM MAY 2021 - MARCH 2023
+Dellyman, Nigeria - Full-stack Engineer
+At Dellyman, I developed delivery plugins for content management systems like WordPress and Ecwid, enabling customers to book deliveries for e-commerce orders directly from their websites using PHP. I translated Figma designs into responsive, user-friendly interfaces and worked closely with backend engineers to implement and consume API endpoints for Noshtrybe. I focused on ensuring a seamless user experience across web applications throughout my tenure.
+
+
+APRIL 2019 - MARCH 2021
+Dsoftsolutions, Ikorodu - Web designer
+Created and managed over 25 WordPress website projects, from procurement to commissioning, ensuring timely delivery and high-quality outcomes. I ensured client satisfaction with the website which helped our client make money.
+Education
+Federal University of Technology, Akure, Nigeria - B.Tech. (Cybersecurity)
+Brands I have worked with:
+Noshtrybe: I worked on this project for Dellyman as the frontend engineer using Vue.js and other core libraries like Vuex and Vue router.
+Kavlr: I worked on the Expense Management Module and No code checkout modules  for Kavlr, Kavlr offers GBP and EURO accounts to its customers, they also provide business tools like expense and budgeting, crowd pool, and invoicing 
+Billspadi: Created a one-page website for this brand. They offer bill payments to their customers
+Okpay: Created a one-page website for this brand,
+Kashwise: I integrated Kashwise with 3rd party Striga which provides 6 wallets (Including a Euro Iban and Bic)
+Hashit: I worked on the landing page and marketplace where vendor can create their stores upload products and buyers can add their products to their cart and checkout

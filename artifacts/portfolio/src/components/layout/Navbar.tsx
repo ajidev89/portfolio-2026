@@ -14,8 +14,9 @@ export function Navbar() {
         <nav className="hidden md:flex items-center gap-8 text-sm font-mono text-white/70">
           <a href="#about" className="hover:text-primary transition-colors">01. About</a>
           <a href="#experience" className="hover:text-primary transition-colors">02. Experience</a>
-          <a href="#work" className="hover:text-primary transition-colors">03. Work</a>
-          <a href="#contact" className="hover:text-primary transition-colors">04. Contact</a>
+          <a href="#tools" className="hover:text-primary transition-colors">03. Tools</a>
+          <a href="#work" className="hover:text-primary transition-colors">04. Work</a>
+          <a href="#contact" className="hover:text-primary transition-colors">05. Contact</a>
         </nav>
       </div>
     </motion.header>
