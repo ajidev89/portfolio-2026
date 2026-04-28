@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowUpRight, Github, ExternalLink, Mail, Linkedin, Phone, Globe } from "lucide-react";
+import { ArrowUpRight, Github, ExternalLink, Mail, Linkedin, Phone, Globe, Download } from "lucide-react";
 import {
   SiLaravel,
   SiNodedotjs,
@@ -152,6 +152,13 @@ export default function Home() {
                 className="bg-accent-gradient text-white px-6 py-3 rounded-full font-medium hover:opacity-90 transition-opacity inline-flex items-center gap-2 shadow-lg shadow-primary/20"
               >
                 Get in touch <ArrowUpRight className="w-4 h-4" />
+              </a>
+              <a
+                href="Ajidagba-Ayobami-Resume.pdf"
+                download
+                className="px-6 py-3 rounded-full font-medium border border-border hover:border-primary/60 hover:text-foreground text-muted-foreground transition-colors inline-flex items-center gap-2"
+              >
+                <Download className="w-4 h-4" /> Resume
               </a>
               <div className="flex items-center gap-4 text-muted-foreground">
                 <a
