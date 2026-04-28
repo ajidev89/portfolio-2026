@@ -59,8 +59,9 @@
   --popover: 0 0% 100%;
   --popover-foreground: 0 0% 9%;
   --popover-border: 0 0% 89%;
-  --primary: 24 100% 50%;
+  --primary: 252 78% 63%;
   --primary-foreground: 0 0% 100%;
+  --accent-gradient: linear-gradient(90deg, #4362BE 0%, #9747FF 100%);
   --secondary: 0 0% 94%;
   --secondary-foreground: 0 0% 9%;
   --muted: 0 0% 94%;
@@ -87,8 +88,9 @@
   --popover: 0 0% 6%;
   --popover-foreground: 0 0% 95%;
   --popover-border: 0 0% 15%;
-  --primary: 24 100% 50%;
+  --primary: 252 78% 63%;
   --primary-foreground: 0 0% 100%;
+  --accent-gradient: linear-gradient(90deg, #4362BE 0%, #9747FF 100%);
   --secondary: 0 0% 12%;
   --secondary-foreground: 0 0% 95%;
   --muted: 0 0% 12%;
@@ -110,5 +112,26 @@
   }
   html {
     scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .text-accent-gradient {
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+
+  .bg-accent-gradient {
+    background: var(--accent-gradient);
+  }
+
+  .border-accent-gradient {
+    border: 1px solid transparent;
+    background:
+      linear-gradient(hsl(var(--background)), hsl(var(--background))) padding-box,
+      var(--accent-gradient) border-box;
   }
 }

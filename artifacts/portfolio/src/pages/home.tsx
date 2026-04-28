@@ -137,12 +137,13 @@ export default function Home() {
           className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-12 md:gap-16 items-center"
         >
           <div className="max-w-3xl order-2 md:order-1">
-            <motion.div variants={fadeUp} className="font-mono text-primary text-sm mb-6 tracking-tight">
+            <motion.div variants={fadeUp} className="font-mono text-accent-gradient text-sm mb-6 tracking-tight">
               AJIDAGBA AYOBAMI
             </motion.div>
             <motion.h1 variants={fadeUp} className="text-5xl sm:text-7xl font-bold tracking-tight text-foreground leading-[1.1] mb-8">
               Principal Engineer.<br />
-              <span className="text-muted-foreground">Architecting products that ship.</span>
+              <span className="text-accent-gradient">Architecting products</span>
+              <span className="text-muted-foreground"> that ship.</span>
             </motion.h1>
             <motion.p variants={fadeUp} className="text-lg sm:text-xl text-muted-foreground max-w-2xl leading-relaxed mb-12">
               Backend-first engineer building APIs, web, and mobile products across fintech,
@@ -152,7 +153,7 @@ export default function Home() {
             <motion.div variants={fadeUp} className="flex flex-wrap items-center gap-6">
               <a
                 href="#contact"
-                className="bg-foreground text-background px-6 py-3 rounded-full font-medium hover:bg-primary transition-colors inline-flex items-center gap-2"
+                className="bg-accent-gradient text-white px-6 py-3 rounded-full font-medium hover:opacity-90 transition-opacity inline-flex items-center gap-2 shadow-lg shadow-primary/20"
               >
                 Get in touch <ArrowUpRight className="w-4 h-4" />
               </a>
@@ -219,7 +220,7 @@ export default function Home() {
           className="grid grid-cols-1 md:grid-cols-3 gap-12"
         >
           <motion.h2 variants={fadeUp} className="text-3xl font-bold flex items-baseline gap-4">
-            <span className="text-primary font-mono text-sm font-normal">01.</span> About
+            <span className="text-accent-gradient font-mono text-sm font-normal">01.</span> About
           </motion.h2>
           <div className="md:col-span-2 space-y-6 text-muted-foreground leading-relaxed text-lg">
             <motion.p variants={fadeUp}>
@@ -249,7 +250,7 @@ export default function Home() {
           variants={staggerContainer}
         >
           <motion.h2 variants={fadeUp} className="text-3xl font-bold mb-16 flex items-baseline gap-4">
-            <span className="text-primary font-mono text-sm font-normal">02.</span> Experience
+            <span className="text-accent-gradient font-mono text-sm font-normal">02.</span> Experience
           </motion.h2>
 
           <div className="space-y-16">
@@ -308,7 +309,7 @@ export default function Home() {
           variants={staggerContainer}
         >
           <motion.h2 variants={fadeUp} className="text-3xl font-bold mb-6 flex items-baseline gap-4">
-            <span className="text-primary font-mono text-sm font-normal">03.</span> Tools I Use
+            <span className="text-accent-gradient font-mono text-sm font-normal">03.</span> Tools I Use
           </motion.h2>
           <motion.p
             variants={fadeUp}
@@ -356,7 +357,7 @@ export default function Home() {
           variants={staggerContainer}
         >
           <motion.h2 variants={fadeUp} className="text-3xl font-bold mb-6 flex items-baseline gap-4">
-            <span className="text-primary font-mono text-sm font-normal">04.</span> Selected Work
+            <span className="text-accent-gradient font-mono text-sm font-normal">04.</span> Selected Work
           </motion.h2>
           <motion.p
             variants={fadeUp}
@@ -375,7 +376,7 @@ export default function Home() {
                 className="group relative bg-card border border-border rounded-xl p-8 hover:border-primary/40 transition-colors flex flex-col"
               >
                 <div className="flex items-start justify-between mb-6">
-                  <div className="font-mono text-primary text-sm">{project.category}</div>
+                  <div className="font-mono text-accent-gradient text-sm">{project.category}</div>
                   <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors" />
                 </div>
                 <h3 className="text-2xl font-bold mb-4">{project.title}</h3>
@@ -409,7 +410,7 @@ export default function Home() {
           viewport={{ once: true, margin: "-100px" }}
           variants={staggerContainer}
         >
-          <motion.div variants={fadeUp} className="font-mono text-primary text-sm mb-4">
+          <motion.div variants={fadeUp} className="font-mono text-accent-gradient text-sm mb-4">
             05. What's Next?
           </motion.div>
           <motion.h2 variants={fadeUp} className="text-4xl font-bold mb-6">
