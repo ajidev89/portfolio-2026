@@ -145,11 +145,7 @@ export default function Home() {
               <span className="text-accent-gradient">Architecting products</span>
               <span className="text-muted-foreground"> that ship.</span>
             </motion.h1>
-            <motion.p variants={fadeUp} className="text-lg sm:text-xl text-muted-foreground max-w-2xl leading-relaxed mb-12">
-              Backend-first engineer building APIs, web, and mobile products across fintech,
-              e-commerce, ERP, logistics, and digital agencies. I lead teams from initial planning
-              through rollout — and beyond expectations.
-            </motion.p>
+            <motion.p variants={fadeUp} className="text-lg sm:text-xl text-muted-foreground max-w-2xl leading-relaxed mb-12">Product-first engineer building APIs, web, and mobile products across fintech, e-commerce, ERP, logistics, and digital agencies. I lead teams from initial planning through rollout — and beyond expectations.</motion.p>
             <motion.div variants={fadeUp} className="flex flex-wrap items-center gap-6">
               <a
                 href="#contact"
@@ -209,7 +205,6 @@ export default function Home() {
           </motion.div>
         </motion.div>
       </section>
-
       {/* ABOUT SECTION */}
       <section id="about" className="py-32 px-6 max-w-5xl mx-auto border-t border-border">
         <motion.div
@@ -240,7 +235,6 @@ export default function Home() {
           </div>
         </motion.div>
       </section>
-
       {/* EXPERIENCE SECTION */}
       <section id="experience" className="py-32 px-6 max-w-5xl mx-auto border-t border-border">
         <motion.div
@@ -299,7 +293,6 @@ export default function Home() {
           </div>
         </motion.div>
       </section>
-
       {/* TOOLS SECTION */}
       <section id="tools" className="py-32 px-6 max-w-5xl mx-auto border-t border-border">
         <motion.div
@@ -347,7 +340,6 @@ export default function Home() {
           </div>
         </motion.div>
       </section>
-
       {/* PROJECTS SECTION */}
       <section id="work" className="py-32 px-6 max-w-5xl mx-auto border-t border-border">
         <motion.div
@@ -401,7 +393,6 @@ export default function Home() {
           </div>
         </motion.div>
       </section>
-
       {/* CONTACT SECTION */}
       <section id="contact" className="py-32 px-6 max-w-2xl mx-auto text-center border-t border-border">
         <motion.div
