@@ -36,7 +36,7 @@ const experience = [
     company: "Voyatek Group",
     location: "Nigeria",
     date: "Jul 2024 — Present",
-    type: "Contract",
+    type: "Full-time",
     description:
       "Lead a team of 6 engineers building Enterprise Resource Planning software. Own architecture, coordinate delivery, and ship features including integrated chat & calls, calendar management, leads tracking, and file management — measurably improving productivity for client organizations.",
     stack: ["Node.js", "TypeScript", "Next.js", "Docker"],
@@ -47,6 +47,7 @@ const experience = [
     company: "Kavlr",
     location: "United Kingdom",
     date: "Jan 2022 — Jun 2024",
+      type: "Full-time",
     description:
       "Led a team of developers, built the Admin Dashboard and APIs, and integrated Evolve (cards), PayPal, and Stripe to streamline payments. Spearheaded a No-Code Checkout feature that enabled rapid deployment of payment solutions, with security and best practices baked in from day one.",
     stack: ["Node.js", "Vue.js", "Nuxt.js", "Stripe", "PayPal"],
@@ -56,6 +57,7 @@ const experience = [
     company: "Dellyman",
     location: "Nigeria",
     date: "May 2021 — Mar 2023",
+      type: "Full-time",
     description:
       "Built delivery plugins for WordPress and Ecwid in PHP, allowing merchants to book deliveries directly from their stores. Translated Figma designs into responsive UIs for Noshtrybe and partnered closely with backend engineers to consume and ship API endpoints.",
     stack: ["PHP", "Vue.js", "WordPress", "Laravel"],
@@ -65,6 +67,7 @@ const experience = [
     company: "Dsoftsolutions",
     location: "Ikorodu",
     date: "Apr 2019 — Mar 2021",
+    type: "Full-time",
     description:
       "Designed and shipped 25+ WordPress websites end-to-end — from procurement through commissioning — focused on timely delivery, high-quality outcomes, and helping clients turn their sites into revenue.",
     stack: ["WordPress", "PHP", "JavaScript"],
