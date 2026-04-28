@@ -14,7 +14,7 @@ import {
   SiStripe,
   SiPaypal,
 } from "react-icons/si";
-import profileImage from "@/assets/profile.png";
+import profileImage from "@/assets/picture.jpg";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 20 },
@@ -180,7 +180,7 @@ export default function Home() {
                   <Linkedin className="w-5 h-5" />
                 </a>
                 <a
-                  href="https://ajidev89.netlify.app"
+                  href="https://ajidev.site"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Personal website"
@@ -199,7 +199,7 @@ export default function Home() {
               <img
                 src={profileImage}
                 alt="Ajidagba Ayobami"
-                className="relative w-44 h-44 sm:w-56 sm:h-56 md:w-72 md:h-72 rounded-full object-cover grayscale-[20%] ring-1 ring-border/60 shadow-2xl"
+                className="relative w-44 h-44 sm:w-56 sm:h-56 md:w-72 md:h-72 rounded-full grayscale-[20%] ring-1 ring-border/60 shadow-2xl"
               />
               <div className="absolute -bottom-2 -right-2 bg-background border border-border rounded-full px-3 py-1.5 shadow-lg flex items-center gap-2">
                 <span className="relative flex h-2 w-2">
