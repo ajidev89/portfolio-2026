@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight, Github, ExternalLink, Mail, Twitter, Linkedin } from "lucide-react";
+import profileImage from "@/assets/profile.png";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 20 },
@@ -18,31 +19,52 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* HERO SECTION */}
-      <section className="min-h-[90vh] flex flex-col justify-center px-6 pt-32 max-w-5xl mx-auto">
+      <section className="min-h-[90vh] flex flex-col justify-center px-6 pt-32 max-w-6xl mx-auto">
         <motion.div
           variants={staggerContainer}
           initial="hidden"
           animate="visible"
-          className="max-w-3xl"
+          className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-12 md:gap-16 items-center"
         >
-          <motion.div variants={fadeUp} className="font-mono text-primary text-sm mb-6 tracking-tight">
-            ALEX CARTER
-          </motion.div>
-          <motion.h1 variants={fadeUp} className="text-5xl sm:text-7xl font-bold tracking-tight text-foreground leading-[1.1] mb-8">
-            Principal Engineer.<br />
-            <span className="text-muted-foreground">Architecting scalable platforms.</span>
-          </motion.h1>
-          <motion.p variants={fadeUp} className="text-lg sm:text-xl text-muted-foreground max-w-2xl leading-relaxed mb-12">
-            I build distributed systems and developer platforms that power modern products. 
-            Currently focused on high-throughput infrastructure and unified build graphs.
-          </motion.p>
-          <motion.div variants={fadeUp} className="flex items-center gap-6">
-            <a href="#contact" className="bg-foreground text-background px-6 py-3 rounded-full font-medium hover:bg-primary transition-colors inline-flex items-center gap-2">
-              Get in touch <ArrowUpRight className="w-4 h-4" />
-            </a>
-            <div className="flex items-center gap-4 text-muted-foreground">
-              <a href="https://github.com" className="hover:text-foreground transition-colors"><Github className="w-5 h-5" /></a>
-              <a href="https://linkedin.com" className="hover:text-foreground transition-colors"><Linkedin className="w-5 h-5" /></a>
+          <div className="max-w-3xl order-2 md:order-1">
+            <motion.div variants={fadeUp} className="font-mono text-primary text-sm mb-6 tracking-tight">
+              ALEX CARTER
+            </motion.div>
+            <motion.h1 variants={fadeUp} className="text-5xl sm:text-7xl font-bold tracking-tight text-foreground leading-[1.1] mb-8">
+              Principal Engineer.<br />
+              <span className="text-muted-foreground">Architecting scalable platforms.</span>
+            </motion.h1>
+            <motion.p variants={fadeUp} className="text-lg sm:text-xl text-muted-foreground max-w-2xl leading-relaxed mb-12">
+              I build distributed systems and developer platforms that power modern products. 
+              Currently focused on high-throughput infrastructure and unified build graphs.
+            </motion.p>
+            <motion.div variants={fadeUp} className="flex items-center gap-6">
+              <a href="#contact" className="bg-foreground text-background px-6 py-3 rounded-full font-medium hover:bg-primary transition-colors inline-flex items-center gap-2">
+                Get in touch <ArrowUpRight className="w-4 h-4" />
+              </a>
+              <div className="flex items-center gap-4 text-muted-foreground">
+                <a href="https://github.com" className="hover:text-foreground transition-colors"><Github className="w-5 h-5" /></a>
+                <a href="https://linkedin.com" className="hover:text-foreground transition-colors"><Linkedin className="w-5 h-5" /></a>
+              </div>
+            </motion.div>
+          </div>
+
+          <motion.div variants={fadeUp} className="order-1 md:order-2 flex justify-center md:justify-end">
+            <div className="relative">
+              <div className="absolute -inset-4 bg-primary/20 blur-2xl rounded-full" aria-hidden="true" />
+              <div className="absolute -inset-px rounded-full bg-gradient-to-br from-primary/60 via-primary/10 to-transparent" aria-hidden="true" />
+              <img
+                src={profileImage}
+                alt="Alex Carter"
+                className="relative w-44 h-44 sm:w-56 sm:h-56 md:w-72 md:h-72 rounded-full object-cover grayscale-[20%] ring-1 ring-border/60 shadow-2xl"
+              />
+              <div className="absolute -bottom-2 -right-2 bg-background border border-border rounded-full px-3 py-1.5 shadow-lg flex items-center gap-2">
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75" />
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-primary" />
+                </span>
+                <span className="font-mono text-xs text-muted-foreground">Available</span>
+              </div>
             </div>
           </motion.div>
         </motion.div>
