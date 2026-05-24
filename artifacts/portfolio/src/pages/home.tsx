@@ -52,7 +52,7 @@ const experience = [
     type: "Full-time",
     description:
       "Leading the architecture and development of Gopaddi Books — an AI-powered, scalable accounting platform. Designed a multi-entity system for consolidated and isolated financial reporting across subsidiaries. Built P&L, Balance Sheet, and Cash Flow reporting with audit trails. Integrated AI-driven bank reconciliation and smart transaction matching. Implemented flexible Chart of Accounts onboarding and role-based access control.",
-    stack: ["Node.js", "TypeScript", "Next.js", "AI", "Docker"],
+    stack: ["Laravel", "TypeScript", "React", "AI", "Docker"],
   },
   {
     role: "Software Engineer",
@@ -63,7 +63,7 @@ const experience = [
     type: "Full-time",
     description:
       "Led a team of 6 engineers architecting a modular ERP platform to optimise enterprise workflows. Designed system architecture and coordinated full-stack development across microservices and APIs. Built core modules including real-time chat & calling (RTC), calendar scheduling, CRM-style lead tracking, and secure file/document management.",
-    stack: ["Node.js", "TypeScript", "Next.js", "RabbitMQ", "Docker"],
+    stack: ["Laravel", "TypeScript", "Next.js", , "Docker"],
   },
   {
     role: "Fullstack Engineer",
@@ -105,7 +105,7 @@ const projects = [
     description:
       "AI-powered accounting platform with multi-entity financial reporting. Built P&L, Balance Sheet, and Cash Flow statements with full audit trails, AI-driven bank reconciliation, and smart transaction matching.",
     metrics: "Multi-entity • AI reconciliation • Role-based access",
-    tech: ["React", "Node.js", "TypeScript", "AI"],
+    tech: ["React", "Laravel", "TypeScript", "AI"],
     link: "gopaddi.com",
   },
   {
@@ -168,8 +168,18 @@ const tools = [
     color: "#2496ED",
   },
   { name: "Git", category: "Version Control", Icon: SiGit, color: "#F05032" },
-  { name: "Redis", category: "Infrastructure", Icon: SiRedis, color: "#FF4438" },
-  { name: "RabbitMQ", category: "Infrastructure", Icon: SiRabbitmq, color: "#FF6600" },
+  {
+    name: "Redis",
+    category: "Infrastructure",
+    Icon: SiRedis,
+    color: "#FF4438",
+  },
+  {
+    name: "RabbitMQ",
+    category: "Infrastructure",
+    Icon: SiRabbitmq,
+    color: "#FF6600",
+  },
 ];
 
 export default function Home() {
