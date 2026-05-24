@@ -123,7 +123,7 @@ const projects = [
     description:
       "Lead Developer on a smart mobility platform supporting ride booking, fleet operations, payment workflows, and scalable transportation services. Directed frontend and backend engineering, system architecture, and API integrations.",
     metrics: "Ride booking • Fleet ops • Payment workflows",
-    tech: ["Next.js", "Node.js", "TypeScript"],
+    tech: ["Next.js", "Laravel", "TypeScript"],
     link: "tec-ride.com",
   },
   {
@@ -132,7 +132,7 @@ const projects = [
     description:
       "Led design and development of the official website for Downtown Grill NG — optimising performance, responsiveness, and UX for a growing restaurant brand. Supported digital visibility, customer interaction, and online food ordering across multiple locations.",
     metrics: "Multi-location • Online ordering • Performance optimised",
-    tech: ["Next.js", "Tailwind", "Node.js"],
+    tech: ["Next.js", "Tailwind", "Laravel"],
     link: "downtowngrill.ng",
   },
 ];
