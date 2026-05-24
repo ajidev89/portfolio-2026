@@ -20,8 +20,8 @@ import {
   SiTailwindcss,
   SiGit,
   SiDocker,
-  SiStripe,
-  SiPaypal,
+  SiRedis,
+  SiRabbitmq,
 } from "react-icons/si";
 import profileImage from "@/assets/picture.jpg";
 
@@ -46,13 +46,24 @@ const experience = [
   {
     role: "Principal Software Engineer",
     subRole: "Product Architect",
-    company: "Voyatek Group",
+    company: "Gopaddi",
     location: "Nigeria",
-    date: "Jul 2024 — Present",
+    date: "Jan 2026 — Present",
     type: "Full-time",
     description:
-      "Lead a team of 6 engineers building Enterprise Resource Planning software. Own architecture, coordinate delivery, and ship features including integrated chat & calls, calendar management, leads tracking, and file management — measurably improving productivity for client organizations.",
-    stack: ["Node.js", "TypeScript", "Next.js", "Docker"],
+      "Leading the architecture and development of Gopaddi Books — an AI-powered, scalable accounting platform. Designed a multi-entity system for consolidated and isolated financial reporting across subsidiaries. Built P&L, Balance Sheet, and Cash Flow reporting with audit trails. Integrated AI-driven bank reconciliation and smart transaction matching. Implemented flexible Chart of Accounts onboarding and role-based access control.",
+    stack: ["Node.js", "TypeScript", "Next.js", "AI", "Docker"],
+  },
+  {
+    role: "Software Engineer",
+    subRole: "Team Architect",
+    company: "Gopaddi",
+    location: "Nigeria",
+    date: "Jul 2024 — Dec 2025",
+    type: "Full-time",
+    description:
+      "Led a team of 6 engineers architecting a modular ERP platform to optimise enterprise workflows. Designed system architecture and coordinated full-stack development across microservices and APIs. Built core modules including real-time chat & calling (RTC), calendar scheduling, CRM-style lead tracking, and secure file/document management.",
+    stack: ["Node.js", "TypeScript", "Next.js", "RabbitMQ", "Docker"],
   },
   {
     role: "Fullstack Engineer",
@@ -62,7 +73,7 @@ const experience = [
     date: "Jan 2022 — Jun 2024",
     type: "Full-time",
     description:
-      "Led a team of developers, built the Admin Dashboard and APIs, and integrated Evolve (cards), PayPal, and Stripe to streamline payments. Spearheaded a No-Code Checkout feature that enabled rapid deployment of payment solutions, with security and best practices baked in from day one.",
+      "Led a team of developers building a fintech platform. Designed and implemented a secure Admin Dashboard and REST APIs. Integrated Stripe, PayPal, and Evolve Cards for payment processing and built a No-Code Checkout system for fast merchant onboarding. Enforced secure coding practices and ensured scalable, reliable system architecture.",
     stack: ["Node.js", "Vue.js", "Nuxt.js", "Stripe", "PayPal"],
   },
   {
@@ -89,40 +100,40 @@ const experience = [
 
 const projects = [
   {
+    title: "Gopaddi Books",
+    category: "AI · Accounting",
+    description:
+      "AI-powered accounting platform with multi-entity financial reporting. Built P&L, Balance Sheet, and Cash Flow statements with full audit trails, AI-driven bank reconciliation, and smart transaction matching.",
+    metrics: "Multi-entity • AI reconciliation • Role-based access",
+    tech: ["Node.js", "TypeScript", "Next.js", "AI"],
+    link: "gopaddi.com",
+  },
+  {
     title: "Kavlr",
     category: "Fintech",
     description:
-      "GBP and EURO multi-currency accounts with business tools — expense management, budgeting, crowd pool, and invoicing. Built the Expense Management and No-Code Checkout modules.",
-    metrics: "Multi-currency accounts • Stripe & PayPal • No-code checkout",
+      "GBP and EURO multi-currency accounts with business tools — expense management, budgeting, crowd pool, and invoicing. Built the Admin Dashboard, REST APIs, and No-Code Checkout for fast merchant onboarding.",
+    metrics: "Multi-currency • Stripe & PayPal • No-code checkout",
     tech: ["Vue.js", "Node.js", "Stripe"],
     link: "kavlr.com",
   },
   {
-    title: "Kashwise",
-    category: "Fintech / Wallets",
+    title: "Tec-Ride",
+    category: "Smart Mobility",
     description:
-      "Integrated Kashwise with Striga to provision six wallets per user — including a Euro IBAN and BIC — bringing real European banking rails into a consumer-grade product.",
-    metrics: "6 wallets per user • Euro IBAN & BIC • Striga integration",
-    tech: ["Node.js", "TypeScript", "Striga"],
-    link: "kashwise.app",
+      "Lead Developer on a smart mobility platform supporting ride booking, fleet operations, payment workflows, and scalable transportation services. Directed frontend and backend engineering, system architecture, and API integrations.",
+    metrics: "Ride booking • Fleet ops • Payment workflows",
+    tech: ["Next.js", "Node.js", "TypeScript"],
+    link: "tec-ride.com",
   },
   {
-    title: "Noshtrybe",
-    category: "E-commerce",
+    title: "Downtown Grill",
+    category: "Restaurant · Web",
     description:
-      "Frontend engineer on the Noshtrybe rebuild at Dellyman. Translated Figma into a responsive Vue.js + Vuex + Vue Router experience and wired it to backend APIs.",
-    metrics: "Vue.js • Vuex • Vue Router",
-    tech: ["Vue.js", "Vuex", "REST API"],
-    link: "noshtrybe.com",
-  },
-  {
-    title: "Hashit",
-    category: "Marketplace",
-    description:
-      "Built the landing page and full marketplace experience — vendors create stores and upload products; buyers browse, add to cart, and checkout. End-to-end buyer/seller flows.",
-    metrics: "Vendor stores • Cart & checkout • Marketplace flows",
-    tech: ["Next.js", "Node.js", "Tailwind"],
-    link: "hashit.io",
+      "Led design and development of the official website for Downtown Grill NG — optimising performance, responsiveness, and UX for a growing restaurant brand. Supported digital visibility, customer interaction, and online food ordering across multiple locations.",
+    metrics: "Multi-location • Online ordering • Performance optimised",
+    tech: ["Next.js", "Tailwind", "Node.js"],
+    link: "downtowngrill.ng",
   },
 ];
 
@@ -157,8 +168,8 @@ const tools = [
     color: "#2496ED",
   },
   { name: "Git", category: "Version Control", Icon: SiGit, color: "#F05032" },
-  { name: "Stripe", category: "Payments", Icon: SiStripe, color: "#635BFF" },
-  { name: "PayPal", category: "Payments", Icon: SiPaypal, color: "#003087" },
+  { name: "Redis", category: "Infrastructure", Icon: SiRedis, color: "#FF4438" },
+  { name: "RabbitMQ", category: "Infrastructure", Icon: SiRabbitmq, color: "#FF6600" },
 ];
 
 export default function Home() {
@@ -314,8 +325,8 @@ export default function Home() {
             </motion.p>
             <motion.p variants={fadeUp}>
               Today I work as Principal Software Engineer & Product Architect at
-              Voyatek Group, where I lead a team of six on a production ERP
-              platform.
+              Gopaddi, where I lead the architecture of Gopaddi Books — an
+              AI-powered accounting platform built for scale.
             </motion.p>
           </div>
         </motion.div>
