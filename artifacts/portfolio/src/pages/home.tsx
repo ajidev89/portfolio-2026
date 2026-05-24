@@ -364,50 +364,63 @@ export default function Home() {
 
           <div className="space-y-16">
             {experience.map((job, i) => (
-              <motion.div
-                key={i}
-                variants={fadeUp}
-                className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-8 group"
-              >
-                <div className="text-muted-foreground font-mono text-sm mt-1">
-                  {job.date}
-                  {job.type && (
-                    <div className="text-xs mt-1 text-primary/80">
-                      {job.type}
+              <div key={i}>
+                {i > 0 && experience[i - 1].company === job.company && (
+                  <motion.div
+                    variants={fadeUp}
+                    className="flex items-center gap-3 -mt-10 mb-10 md:ml-[25%]"
+                  >
+                    <div className="flex items-center gap-2 px-3 py-1.5 rounded-full border border-border bg-secondary/50 text-xs font-mono text-muted-foreground">
+                      <ArrowUpRight className="w-3.5 h-3.5 text-accent-gradient" style={{ color: "#9747FF" }} />
+                      <span className="text-accent-gradient">Promoted</span>
                     </div>
-                  )}
-                </div>
-                <div className="md:col-span-3">
-                  <h3 className="text-xl font-semibold text-foreground flex flex-wrap items-center gap-x-2">
-                    {job.role}
-                    {job.subRole && (
-                      <span className="text-muted-foreground font-normal text-base">
-                        ({job.subRole})
-                      </span>
+                    <div className="h-px flex-1 bg-border" />
+                  </motion.div>
+                )}
+                <motion.div
+                  variants={fadeUp}
+                  className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-8 group"
+                >
+                  <div className="text-muted-foreground font-mono text-sm mt-1">
+                    {job.date}
+                    {job.type && (
+                      <div className="text-xs mt-1 text-primary/80">
+                        {job.type}
+                      </div>
                     )}
-                    <span className="text-muted-foreground font-normal">
-                      at
-                    </span>
-                    <span className="text-foreground">{job.company}</span>
-                    <span className="text-muted-foreground font-normal text-sm">
-                      · {job.location}
-                    </span>
-                  </h3>
-                  <p className="mt-4 text-muted-foreground leading-relaxed">
-                    {job.description}
-                  </p>
-                  <div className="mt-6 flex flex-wrap gap-2">
-                    {job.stack.map((tech) => (
-                      <span
-                        key={tech}
-                        className="text-xs font-mono px-3 py-1 bg-secondary text-secondary-foreground rounded-full"
-                      >
-                        {tech}
-                      </span>
-                    ))}
                   </div>
-                </div>
-              </motion.div>
+                  <div className="md:col-span-3">
+                    <h3 className="text-xl font-semibold text-foreground flex flex-wrap items-center gap-x-2">
+                      {job.role}
+                      {job.subRole && (
+                        <span className="text-muted-foreground font-normal text-base">
+                          ({job.subRole})
+                        </span>
+                      )}
+                      <span className="text-muted-foreground font-normal">
+                        at
+                      </span>
+                      <span className="text-foreground">{job.company}</span>
+                      <span className="text-muted-foreground font-normal text-sm">
+                        · {job.location}
+                      </span>
+                    </h3>
+                    <p className="mt-4 text-muted-foreground leading-relaxed">
+                      {job.description}
+                    </p>
+                    <div className="mt-6 flex flex-wrap gap-2">
+                      {job.stack.map((tech) => (
+                        <span
+                          key={tech}
+                          className="text-xs font-mono px-3 py-1 bg-secondary text-secondary-foreground rounded-full"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </motion.div>
+              </div>
             ))}
           </div>
         </motion.div>
