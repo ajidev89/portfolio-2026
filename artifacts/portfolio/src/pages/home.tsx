@@ -105,7 +105,7 @@ const projects = [
     description:
       "AI-powered accounting platform with multi-entity financial reporting. Built P&L, Balance Sheet, and Cash Flow statements with full audit trails, AI-driven bank reconciliation, and smart transaction matching.",
     metrics: "Multi-entity • AI reconciliation • Role-based access",
-    tech: ["Node.js", "TypeScript", "Next.js", "AI"],
+    tech: ["React", "Node.js", "TypeScript", "AI"],
     link: "gopaddi.com",
   },
   {
